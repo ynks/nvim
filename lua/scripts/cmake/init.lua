@@ -1,7 +1,6 @@
 local M = {}
 M.setup = function()
   local CMake = require("scripts.cmake.cmake")
-
   vim.api.nvim_create_user_command("CMakeClean", function()
     CMake.Clean()
   end, {})

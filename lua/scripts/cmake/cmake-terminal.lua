@@ -4,6 +4,10 @@ Terminal.Call =  function(cmd, syntax)
     print("Process is Already Running")
     return;
   end
+  if vim.fn.filereadable(vim.fn.getcwd() .. "/CMakeLists.txt") == 0 then
+    print("[ERROR] CMakeLists.txt not found")
+    return
+  end
   local buf = vim.api.nvim_create_buf(false, true)
   local win = vim.api.nvim_open_win(buf, true, {
     relative = 'editor',
