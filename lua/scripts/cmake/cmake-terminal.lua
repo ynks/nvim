@@ -61,6 +61,7 @@ Terminal.Call =  function(cmd, syntax)
     stdout_buffered = false,
     stderr_buffered = false,
     on_stdout = on_stdout,
+    on_stderr = on_stdout,
     on_exit = on_exit,
   })
 end
