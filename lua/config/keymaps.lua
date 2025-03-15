@@ -25,3 +25,10 @@ end
 -- Delete To The Void ("_ prefix to make something delete into the void)
 map("x", '"_x')
 map("ciw", '"_ciw')
+
+-- Terminal keymaps
+vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>tv', '<c-w>v:terminal pwsh<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>ts', '<c-w>s:terminal pwsh<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>tt', ':terminal pwsh<CR>', { noremap = true, silent = true})
+
