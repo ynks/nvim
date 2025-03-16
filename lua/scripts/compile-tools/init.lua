@@ -30,7 +30,7 @@ M.load = function()
   local project = M.json.decode_project()
   if not project then
     local dir = vim.fn.stdpath("config") .. "/lua/scripts/compile-tools/compilers"
-    local files = vim.fn.globpath(dir, "*", false, true)
+    local files = vim.fn.globpath(dir, "*.lua", false, true)
     local modules = {}
     for _, file in ipairs(files) do
       local filename = vim.fn.fnamemodify(file, ":t"):match("^(.-)%.") or vim.fn.fnamemodify(file, ":t")
@@ -85,8 +85,9 @@ M.build_and_run = function()
   if not M.json.decode_project() then print("PROJECT NOT FOUND") return end
   if not M.module then M.load() end
   M.module.build()
-  M.module.run()
-  M.apply_syntax()
+  M.terminal.send_command(function()
+    M.module.run(true)
+  end)
 end
 M.apply_syntax = function()
   if not M.json.decode_project() then print("PROJECT NOT FOUND") return end
