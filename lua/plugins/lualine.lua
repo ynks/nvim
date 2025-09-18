@@ -63,11 +63,19 @@ return {
 				'filename',
 				path = 1,
 				use_mode_colors = false,
-				color = { fg = 'gray', gui = 'italic' }
+				color = { fg = 'gray', bg = 'NvimDarkGray2', gui = 'italic' }
 			}},
-			lualine_y = { 'diagnostics', 'lsp_status'},
-			lualine_z = { 'location',
-			}
+			lualine_y = {
+				{
+					'diagnostics',
+					color = { bg = 'NvimDarkGray2'},
+				},
+				{
+					'lsp_status',
+					color = { fg = 'gray', bg = 'NvimDarkGray2' },
+				},
+			},
+			lualine_z = { 'location' }
 		}
 	}
 
