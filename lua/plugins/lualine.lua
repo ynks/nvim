@@ -39,8 +39,8 @@ return {
 						['VISUAL']  = 'V', ['V-BLOCK'] = 'VB', ['V-LINE']    = 'VL',
 						['SELECT']  = 'S', ['S-LINE']  = 'SL', ['S-BLOCK']   = 'SB',
 						['REPLACE'] = 'R', ['V-REPLACE'] = 'VR', ['COMMAND'] = 'C',
-						['EX'] = ' X', ['MORE'] = ' M', ['CONFIRM'] = 'OK?',
-						['SHELL'] = 'SH', ['TERMINAL'] = ' T',
+						['EX'] = 'X', ['MORE'] = 'M', ['CONFIRM'] = 'OK?',
+						['SHELL'] = 'SH', ['TERMINAL'] = 'T',
 					}
 					return map[str] or str
 				end,
