@@ -14,6 +14,7 @@ return {
 			"cmake",
 			"glsl",
 			"matlab",
+			"python",
 
 			"git_config",
 			"gitattributes",
@@ -27,7 +28,8 @@ return {
 			"bash",
 			"nu"
 		},
-		sync_install = false,
+		sync_install = true,
+		auto_install = true,
 		highlight = { enable = true },
 		indent = { enable = true },
 	}
