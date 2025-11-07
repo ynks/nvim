@@ -1,4 +1,5 @@
 require("config.lazy")
+require("config.lsp")
 
 -- Set line numbers
 vim.opt.number = true
@@ -12,7 +13,7 @@ vim.opt.expandtab = false
 
 -- Display spaces and tabs
 vim.opt.list = true
-vim.opt.listchars = { 
+vim.opt.listchars = {
 	tab = "->",
 	trail = "•",
 	lead = "·",

@@ -46,25 +46,13 @@ return {
 				end,
 			}},
 			lualine_b = {{
-				'diff',
-				color = { bg = 'NvimDarkGray2'},
-			}},
-			lualine_c = {{
-				'buffers',
-				use_mode_colors = false,
-				color = { fg = 'gray'},
-				buffers_color = {
-					active = { fg = 'NvimLightGray4', bg = 'NvimDarkGray3' },
-					inactive = { fg = 'gray' }
-				},
-				symbols = { alternate_file = ''},
-			}},
-			lualine_x = {{
 				'filename',
 				path = 1,
 				use_mode_colors = false,
-				color = { fg = 'gray', bg = 'NvimDarkGray2', gui = 'italic' }
+				color = { fg = 'gray', bg = 'NvimDarkGray2' }
 			}},
+			lualine_c = {},
+			lualine_x = {},
 			lualine_y = {
 				{
 					'diagnostics',
