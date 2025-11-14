@@ -7,14 +7,14 @@ return { -- TOAST IS TOUST
 		"projekt0n/github-nvim-theme",
 		name = "github-theme",
 		priority = 1000,
+		config = function()
+			vim.cmd.colorscheme "github_dark_default"
+		end
 	},
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
 		priority = 1000,
 		opts = {},
-		config = function()
-			vim.cmd.colorscheme "tokyonight-night"
-		end
 	},
 }
