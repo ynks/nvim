@@ -1,0 +1,18 @@
+{
+  "$schema": "https://githubusercontent.com",
+  "runtime": {
+    "version": "LuaJIT"
+  },
+  "workspace": {
+    "library": [
+      "$VIMRUNTIME/lua"
+    ],
+    "checkThirdParty": false
+  },
+  "diagnostics": {
+    "globals": [
+      "vim"
+    ]
+  }
+}
+
